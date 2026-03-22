@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>儿子豌豆保卫战</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="hud">
+        <div>
+          <p class="eyebrow">亲子定制版塔防小剧场</p>
+          <h1>儿子豌豆保卫战</h1>
+          <p class="subtitle">
+            灵感来自经典塔防玩法：豌豆换成你儿子的形象，火力加强，迎战一波又一波巨型 boss，最终赢下整场战斗。
+          </p>
+        </div>
+        <div class="controls">
+          <button id="startBtn">开始战斗</button>
+          <button id="resetBtn">重新开局</button>
+        </div>
+        <div class="stats">
+          <article>
+            <span>儿子豌豆火力</span>
+            <strong id="powerText">超强三连发</strong>
+          </article>
+          <article>
+            <span>当前 Boss</span>
+            <strong id="bossText">等待登场</strong>
+          </article>
+          <article>
+            <span>战局播报</span>
+            <strong id="statusText">点击“开始战斗”观看结局</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="stage-wrap">
+        <canvas id="gameCanvas" width="960" height="540" aria-label="儿子豌豆大战 boss 的战场"></canvas>
+        <div class="legend">
+          <span><i class="seed"></i> 儿子豌豆弹</span>
+          <span><i class="hero"></i> 儿子豌豆</span>
+          <span><i class="boss"></i> 巨型 Boss</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
